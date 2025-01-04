@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A338EAA-0FBA-3447-8053-02E3713D3CBD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ggml-vulkan</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Projects\AI\LLM\llama.cpp\debug\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ggml-vulkan.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ggml-vulkan</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Projects\AI\LLM\llama.cpp\debug\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ggml-vulkan.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ggml-vulkan</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Projects\AI\LLM\llama.cpp\debug\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ggml-vulkan.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ggml-vulkan</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Projects\AI\LLM\llama.cpp\debug\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ggml-vulkan.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ggml-vulkan</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.296.0/Include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR="Debug";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR=\"Debug\";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Debug\ggml-base.lib;C:\VulkanSDK\1.3.296.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/Debug/ggml-vulkan.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/AI/LLM/llama.cpp/debug/bin/Debug/ggml-vulkan.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.296.0/Include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR="Release";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR=\"Release\";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\Release\ggml-base.lib;C:\VulkanSDK\1.3.296.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/Release/ggml-vulkan.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/AI/LLM/llama.cpp/debug/bin/Release/ggml-vulkan.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.296.0/Include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR="MinSizeRel";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR=\"MinSizeRel\";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\MinSizeRel\ggml-base.lib;C:\VulkanSDK\1.3.296.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/MinSizeRel/ggml-vulkan.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/AI/LLM/llama.cpp/debug/bin/MinSizeRel/ggml-vulkan.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.296.0/Include" /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR="RelWithDebInfo";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GGML_BACKEND_BUILD;GGML_BACKEND_SHARED;_CRT_SECURE_NO_WARNINGS;GGML_SCHED_MAX_COPIES=4;_XOPEN_SOURCE=600;GGML_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\";ggml_vulkan_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\..;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan;E:\Projects\AI\LLM\llama.cpp\ggml\src\..\include;C:\VulkanSDK\1.3.296.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\RelWithDebInfo\ggml-base.lib;C:\VulkanSDK\1.3.296.0\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/RelWithDebInfo/ggml-vulkan.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/Projects/AI/LLM/llama.cpp/debug/bin/RelWithDebInfo/ggml-vulkan.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\AI\LLM\llama.cpp\debug\CMakeFiles\713247d099c5c67d01a5d0c30fb61967\ggml-vulkan-shaders.hpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate vulkan shaders</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\bin\Debug\vulkan-shaders-gen.exe --glslc C:/VulkanSDK/1.3.296.0/Bin/glslc.exe --input-dir E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/vulkan-shaders --output-dir E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/vulkan-shaders.spv --target-hpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.hpp --target-cpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.cpp --no-clean
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\acc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\add.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\argsort.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\clamp.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\concat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\contig_copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\cos.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_f32.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_iq4_nl.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q8_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\diag_mask_inf.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\div.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\flash_attn_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu_quick.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_binary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_unary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows_quant.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\group_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\im2col.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\leaky_relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_split_k_reduce.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_base.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_nc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_p021.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pad.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pool2d.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\repeat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rms_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_neox.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\scale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\silu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sin.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\soft_max.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\square.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sum_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\tanh.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\test_coopmat2_support.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\timestep_embedding.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\types.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\upscale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\wkv6.comp;E:\Projects\AI\LLM\llama.cpp\debug\bin\Debug\vulkan-shaders-gen.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.hpp;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate vulkan shaders</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\bin\Release\vulkan-shaders-gen.exe --glslc C:/VulkanSDK/1.3.296.0/Bin/glslc.exe --input-dir E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/vulkan-shaders --output-dir E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/vulkan-shaders.spv --target-hpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.hpp --target-cpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.cpp --no-clean
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\acc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\add.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\argsort.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\clamp.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\concat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\contig_copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\cos.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_f32.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_iq4_nl.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q8_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\diag_mask_inf.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\div.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\flash_attn_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu_quick.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_binary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_unary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows_quant.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\group_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\im2col.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\leaky_relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_split_k_reduce.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_base.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_nc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_p021.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pad.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pool2d.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\repeat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rms_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_neox.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\scale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\silu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sin.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\soft_max.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\square.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sum_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\tanh.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\test_coopmat2_support.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\timestep_embedding.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\types.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\upscale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\wkv6.comp;E:\Projects\AI\LLM\llama.cpp\debug\bin\Release\vulkan-shaders-gen.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.hpp;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generate vulkan shaders</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\bin\MinSizeRel\vulkan-shaders-gen.exe --glslc C:/VulkanSDK/1.3.296.0/Bin/glslc.exe --input-dir E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/vulkan-shaders --output-dir E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/vulkan-shaders.spv --target-hpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.hpp --target-cpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.cpp --no-clean
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\acc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\add.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\argsort.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\clamp.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\concat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\contig_copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\cos.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_f32.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_iq4_nl.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q8_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\diag_mask_inf.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\div.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\flash_attn_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu_quick.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_binary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_unary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows_quant.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\group_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\im2col.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\leaky_relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_split_k_reduce.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_base.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_nc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_p021.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pad.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pool2d.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\repeat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rms_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_neox.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\scale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\silu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sin.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\soft_max.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\square.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sum_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\tanh.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\test_coopmat2_support.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\timestep_embedding.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\types.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\upscale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\wkv6.comp;E:\Projects\AI\LLM\llama.cpp\debug\bin\MinSizeRel\vulkan-shaders-gen.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.hpp;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generate vulkan shaders</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\bin\RelWithDebInfo\vulkan-shaders-gen.exe --glslc C:/VulkanSDK/1.3.296.0/Bin/glslc.exe --input-dir E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/vulkan-shaders --output-dir E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/vulkan-shaders.spv --target-hpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.hpp --target-cpp E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/ggml-vulkan-shaders.cpp --no-clean
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\acc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\add.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\argsort.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\clamp.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\concat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\contig_copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\copy.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\cos.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_f32.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_funcs_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_iq4_nl.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_1.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\dequant_q8_0.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\diag_mask_inf.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\div.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\flash_attn_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\gelu_quick.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_binary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\generic_unary_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\get_rows_quant.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\group_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\im2col.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\leaky_relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_split_k_reduce.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_base.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_nc.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_p021.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q2_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q3_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q4_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q5_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mat_vec_q6_k.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\mul_mm_cm2.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pad.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\pool2d.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\relu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\repeat.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rms_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_head.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_neox.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\rope_norm.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\scale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\silu.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sin.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\soft_max.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\square.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\sum_rows.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\tanh.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\test_coopmat2_support.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\timestep_embedding.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\types.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\upscale.comp;E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\vulkan-shaders\wkv6.comp;E:\Projects\AI\LLM\llama.cpp\debug\bin\RelWithDebInfo\vulkan-shaders-gen.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.hpp;E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/AI/LLM/llama.cpp -BE:/Projects/AI/LLM/llama.cpp/debug --check-stamp-file E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/AI/LLM/llama.cpp -BE:/Projects/AI/LLM/llama.cpp/debug --check-stamp-file E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/AI/LLM/llama.cpp -BE:/Projects/AI/LLM/llama.cpp/debug --check-stamp-file E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Projects/AI/LLM/llama.cpp/ggml/src/ggml-vulkan/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/AI/LLM/llama.cpp -BE:/Projects/AI/LLM/llama.cpp/debug --check-stamp-file E:/Projects/AI/LLM/llama.cpp/debug/ggml/src/ggml-vulkan/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindVulkan.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\Projects\AI\LLM\llama.cpp\ggml\src\ggml-vulkan\ggml-vulkan.cpp" />
+    <ClInclude Include="E:\Projects\AI\LLM\llama.cpp\ggml\include\ggml-vulkan.h" />
+    <ClCompile Include="E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.cpp" />
+    <ClInclude Include="E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\ggml-vulkan-shaders.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="E:\Projects\AI\LLM\llama.cpp\debug\ZERO_CHECK.vcxproj">
+      <Project>{161692B8-8BEA-352F-BD69-EB2B6A46E857}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-base.vcxproj">
+      <Project>{3E4303A5-A238-3FED-AF9A-1F063D204822}</Project>
+      <Name>ggml-base</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Projects\AI\LLM\llama.cpp\debug\ggml\src\ggml-vulkan\vulkan-shaders\vulkan-shaders-gen.vcxproj">
+      <Project>{C1C391D6-B0BE-3BA1-899A-64FFF72FD0A6}</Project>
+      <Name>vulkan-shaders-gen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
